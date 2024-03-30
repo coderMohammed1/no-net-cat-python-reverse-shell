@@ -1,8 +1,8 @@
 import socket
 
 serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = "192.168.1.76"
-port =  1234
+host = "192.168.1.76" # change this (the ip that we are listening on)
+port =  1234 # change this
 
 serv.bind((host,port))
 serv.listen() 
