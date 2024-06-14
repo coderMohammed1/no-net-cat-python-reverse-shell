@@ -1,5 +1,5 @@
 import socket
-import subprocess
+import subprocess #windows
 import os
 
 server = "192.168.1.76"  # the server to communicate with
