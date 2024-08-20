@@ -10,13 +10,13 @@ serv.listen()
 csoc, adder = serv.accept()
 print(f"connected:{adder}")
 
-while True:  
-    command = input("command: ")  
-    csoc.send(command.encode('utf-8'))  
-
+while True:     
     if command.lower() == "exit":  
         break
-
+        
+    command = input("command: ")  
+    csoc.send(command.encode('utf-8'))  
+    
     message = csoc.recv(1024).decode('utf-8')
     print(f"the message: {message}")
 
